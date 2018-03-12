@@ -35,7 +35,7 @@ test:
     - wfdb
     - wfdb.plot
     - wfdb.processing
-    - wfdb.readwrite
+    - wfdb.io
 
 about:
   home: https://github.com/MIT-LCP/wfdb-python
