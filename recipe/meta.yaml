@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "b2ce1402ab55ff6ae802c3e2c2e19d129349ebbfa6b6bab17bb2efc9edac55e3" %}
+{% set version = "2.0.3" %}
+{% set sha256 = "3401fe7b2a6e990295426d1a683f35d013e9b6d4266031978f0b3d92c12c97a0" %}
 
 package:
   name: '{{ name|lower }}'
