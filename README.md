@@ -14,12 +14,15 @@ Native python scripts for reading and writing WFDB signals and annotations.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/wfdb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wfdb-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/wfdb-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/wfdb-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wfdb/badges/version.svg)](https://anaconda.org/conda-forge/wfdb)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wfdb/badges/downloads.svg)](https://anaconda.org/conda-forge/wfdb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-wfdb-green.svg)](https://anaconda.org/conda-forge/wfdb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/wfdb.svg)](https://anaconda.org/conda-forge/wfdb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/wfdb.svg)](https://anaconda.org/conda-forge/wfdb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/wfdb.svg)](https://anaconda.org/conda-forge/wfdb) |
 
 Installing wfdb
 ===============
