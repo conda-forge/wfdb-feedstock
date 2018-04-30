@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "ebe8647c593b6cda1f5c360115271089ad01eafff424db6bd808dfafbaebee42" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "71af76c87dffb8730274bbb5fc50c54c9b5f54aa8fbf8510e7a6aa1f96b6dedf" %}
 
 package:
   name: '{{ name|lower }}'
@@ -12,7 +12,7 @@ source:
   sha256: '{{ sha256 }}'
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
