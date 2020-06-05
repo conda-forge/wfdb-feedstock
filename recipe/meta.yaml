@@ -1,20 +1,20 @@
 {% set name = "wfdb" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "5225326103efde170b28884d85ee170dbc586c9fbaf0ae1a7126d66e1429677c" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "ab01198f1151b28510a0b2375726e402a984349142a0b5b08febf16f42f6b39d" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: '{{ sha256 }}'
+  sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -44,8 +44,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: The WFDB Python Toolbox
-  description:
-    Native python scripts for reading and writing WFDB signals and annotations.
+  description: Native python scripts for reading and writing WFDB signals and annotations.
   doc_url: https://github.com/MIT-LCP/wfdb-python
   dev_url: https://github.com/MIT-LCP/wfdb-python
 
