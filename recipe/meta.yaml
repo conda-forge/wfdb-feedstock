@@ -1,20 +1,20 @@
 {% set name = "wfdb" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "5225326103efde170b28884d85ee170dbc586c9fbaf0ae1a7126d66e1429677c" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "53d536bcc2b246edea3f9a724d2df5f4c7494b22947dcf4e2e92dcb50d81b5f4" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: '{{ sha256 }}'
+  sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -23,13 +23,27 @@ requirements:
     - setuptools
   run:
     - python
+    - certifi >=2016.8.2
+    - chardet >=3.0.0
+    - cycler >=0.10.0
+    - idna >=2.2
+    - joblib >=0.11
+    - kiwisolver >=1.1.0
+    - matplotlib >=2.0.0
+    - mne >=0.18.0
     - nose >=1.3.7
-    - numpy >=1.11.0
-    - matplotlib-base >=1.5.1
-    - requests >=2.10.0
-    - pandas >=0.19.1
-    - scipy >=0.19.0
+    - numpy >=1.10.1
+    - pandas >=0.17.0
+    - pyparsing >=2.0.4
+    - python-dateutil >=2.4.2
+    - pytz >=2018.3
+    - requests >=2.8.1
+    - scikit-learn >=0.18
+    - scipy >=0.17.0
+    - six >=0.9.0
     - scikit-learn
+    - threadpoolctl >=1.0.0
+    - urllib3 >=1.2
 
 test:
   imports:
@@ -44,8 +58,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: The WFDB Python Toolbox
-  description:
-    Native python scripts for reading and writing WFDB signals and annotations.
+  description: Native python scripts for reading and writing WFDB signals and annotations.
   doc_url: https://github.com/MIT-LCP/wfdb-python
   dev_url: https://github.com/MIT-LCP/wfdb-python
 
