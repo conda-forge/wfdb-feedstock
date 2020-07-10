@@ -5,7 +5,7 @@ Home: https://github.com/MIT-LCP/wfdb-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The WFDB Python Toolbox
 
