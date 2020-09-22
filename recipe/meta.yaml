@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "a8d4526b55fc6e01d380f67b5735e7305b26b1c24dac17be0db66a7323b06af6" %}
+{% set version = "3.1.1" %}
+{% set sha256 = "489f8874f87f67c59999f5ddd908c1d822df54258b98eaf9a9a0d4bf6e689883" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
