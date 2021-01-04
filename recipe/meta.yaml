@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >= 3.5
+    - python >=3.5
     - setuptools
     - nose >=1.3.7
     run:
-    - python >= 3.5
+    - python >=3.5
     - certifi >=2016.8.2
     - chardet >=3.0.0
     - cycler >=0.10.0
