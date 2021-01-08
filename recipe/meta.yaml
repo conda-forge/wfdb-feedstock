@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "489f8874f87f67c59999f5ddd908c1d822df54258b98eaf9a9a0d4bf6e689883" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "5bd912b97421a5b829a311bd8051bc17b8fc1e36d058117b61d19bbd6e1f5736" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python
     - setuptools
