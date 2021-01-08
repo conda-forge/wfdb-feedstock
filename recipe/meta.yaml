@@ -19,10 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
+    - nose >=1.3.7
   run:
-    - python
+    - python >=3.5
     - certifi >=2016.8.2
     - chardet >=3.0.0
     - cycler >=0.10.0
@@ -39,9 +40,8 @@ requirements:
     - requests >=2.8.1
     - scikit-learn >=0.18
     - scipy >=0.17.0
-    - scikit-learn >=0.18
     - threadpoolctl >=1.0.0
-    - urllib3 >=1.2
+    - urllib3 >=1.22
 
 test:
   imports:
