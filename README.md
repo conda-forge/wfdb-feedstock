@@ -5,9 +5,13 @@ Home: https://github.com/MIT-LCP/wfdb-python
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wfdb-feedstock/blob/master/LICENSE.txt)
 
 Summary: The WFDB Python Toolbox
+
+Development: https://github.com/MIT-LCP/wfdb-python
+
+Documentation: https://github.com/MIT-LCP/wfdb-python
 
 Native python scripts for reading and writing WFDB signals and annotations.
 

@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "489f8874f87f67c59999f5ddd908c1d822df54258b98eaf9a9a0d4bf6e689883" %}
+{% set version = "3.1.2" %}
+{% set sha256 = "28a1ca28127afb12f27b3986f2d52b235adb212c79128cbf600573b876b5b2b4" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,13 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
+    - nose >=1.3.7
   run:
-    - python
+    - python >=3.5
     - certifi >=2016.8.2
     - chardet >=3.0.0
     - cycler >=0.10.0
@@ -31,7 +32,6 @@ requirements:
     - kiwisolver >=1.1.0
     - matplotlib-base >=2.0.0
     - mne >=0.18.0
-    - nose >=1.3.7
     - numpy >=1.10.1
     - pandas >=0.17.0
     - pyparsing >=2.0.4
@@ -40,10 +40,8 @@ requirements:
     - requests >=2.8.1
     - scikit-learn >=0.18
     - scipy >=0.17.0
-    - six >=0.9.0
-    - scikit-learn
     - threadpoolctl >=1.0.0
-    - urllib3 >=1.2
+    - urllib3 >=1.22
 
 test:
   imports:
