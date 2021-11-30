@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "3.4.0" %}
-{% set sha256 = "10d1e9aa0aee1b5656fdc355b483377ca252fba7fd8d0558a7fe37594cb63c78" %}
+{% set version = "3.4.1" %}
+{% set sha256 = "7ae489c291e7de8bf965d3d5ae71b4117e449554b29e69b3339a69ecace4a23c" %}
 
 package:
   name: {{ name|lower }}
@@ -24,24 +24,12 @@ requirements:
     - nose >=1.3.7
   run:
     - python >=3.5
-    - certifi >=2016.8.2
-    - chardet >=3.0.0
-    - cycler >=0.10.0
-    - idna >=2.2
-    - joblib >=0.11
-    - kiwisolver >=1.1.0
-    - matplotlib-base >=2.0.0
+    - matplotlib-base >=3.3.4
     - nose >=1.3.7
     - numpy >=1.10.1
     - pandas >=0.17.0
-    - pyparsing >=2.0.4
-    - python-dateutil >=2.4.2
-    - pytz >=2017.2
     - requests >=2.8.1
-    - scikit-learn >=0.18
     - scipy >=0.17.0
-    - threadpoolctl >=1.0.0
-    - urllib3 >=1.22
 
 test:
   imports:
