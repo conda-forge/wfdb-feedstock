@@ -45,7 +45,7 @@ about:
   license_file: LICENSE
   summary: The WFDB Python Toolbox
   description: Native python scripts for reading and writing WFDB signals and annotations.
-  doc_url: https://github.com/MIT-LCP/wfdb-python
+  doc_url: https://wfdb.readthedocs.io/en/latest/
   dev_url: https://github.com/MIT-LCP/wfdb-python
 
 extra:
