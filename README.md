@@ -1,11 +1,11 @@
-About wfdb
-==========
+About wfdb-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wfdb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MIT-LCP/wfdb-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wfdb-feedstock/blob/main/LICENSE.txt)
 
 Summary: The WFDB Python Toolbox
 
