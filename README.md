@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@Gijom](https://github.com/Gijom/)
+* [@larsoner](https://github.com/larsoner/)
 
