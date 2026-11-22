@@ -1,6 +1,6 @@
 {% set name = "wfdb" %}
-{% set version = "4.3.1" %}
-{% set sha256 = "d33e9b4674da6cf87bcfcdac640eea4fbe4f95e82a8b209bb6db05c345cd68df" %}
+{% set version = "5.0.0" %}
+{% set sha256 = "a41b23c578c27ac3c38c1039886b3c5ef986bef97ee34fc50875589f7eeaeb7c" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
